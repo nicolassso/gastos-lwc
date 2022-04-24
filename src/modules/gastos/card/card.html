@@ -1,0 +1,23 @@
+<template>
+    <div style="display: flex; flex-direction:column ">
+        <div style="height: 50px;">
+            <p if:true={show}>Total spent: {total}</p>
+        </div>
+        <button onclick={handleClick}>
+            show data
+        </button>
+        <div style="height: 50px;">
+            <div 
+                if:true={show}
+                for:each={entries} 
+                for:item="entry" 
+                key={key}
+                style="display: flex;"
+                >
+                <p>
+                    Category: {entry.category} -- Quantity: {entry.quantity}
+                </p>
+            </div>
+        </div>
+    </div>
+</template>

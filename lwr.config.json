@@ -1,0 +1,10 @@
+{
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "routes": [
+        {
+            "id": "gastos-app",
+            "path": "/",
+            "rootComponent": "gastos/app"
+        }
+    ]
+}
