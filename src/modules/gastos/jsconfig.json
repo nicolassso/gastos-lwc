@@ -2,7 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true
     },
-    "include": ["**/*", "../../node_modules/lwc/**/*.d.ts"],
+    "include": ["**/*", "../../node_modules/lwc/**/*.d.ts", "../../data"],
     "paths": {
         "c/*": ["*"]
     }
