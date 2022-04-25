@@ -7,4 +7,9 @@ import { MARCH_DATA } from './data/months/march/march';
 export default class App extends LightningElement {
     month = currentMonth
     data = APRIL_DATA
+    newEntry = {}
+
+    handleSubmitEntry(event){
+        this.newEntry = event.detail
+    }
 }

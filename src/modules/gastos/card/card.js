@@ -7,6 +7,7 @@
 
      @api data;
      @api month;
+     @api newEntry;
      
     get total() {
         return this.data.total || ''
