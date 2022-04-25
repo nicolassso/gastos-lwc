@@ -6,19 +6,14 @@
  export default class Card extends LightningElement {
 
      @api data;
-
-     show = false;
-
-    handleClick(){
-        this.show === false ? this.show = true : this.show = false
-    }
-
+     @api month;
+     
     get total() {
         return this.data.total || ''
     }
 
     get expenses() {
-        return this.data.april || {};
+        return this.data[this.month] || {};
     }
 
     get key() {

@@ -1,21 +1,26 @@
 <template>
-    <div style="display: flex; flex-direction:column ">
-        <div style="height: 50px;">
-            <p if:true={show}>Total spent: {total}</p>
+    <div class="card-wrapper-div">
+        <div class="card-total-spent-div">
+            <p>Total spent in {month}: {total}</p>
         </div>
-        <button onclick={handleClick}>
-            show data
-        </button>
-        <div style="height: 50px;">
-            <div 
-                if:true={show}
-                for:each={entries} 
-                for:item="entry" 
-                key={key}
-                style="display: flex;"
-                >
-                <p>
-                    Category: {entry.category} -- Quantity: {entry.quantity}
+        <div class="card-labels-div">
+            <h2>Category</h2>
+            <h2>Quantity</h2>
+        </div>
+        <div class="card-entries-div">
+            <div
+
+            class="card-entry-div"
+            for:each={entries} 
+            for:item="entry" 
+            key={key}
+            style="display: flex;"
+            >
+                <p class="card-category-text">
+                    {entry.category}
+                </p>
+                <p class="card-quantity-text">
+                    {entry.quantity}
                 </p>
             </div>
         </div>
