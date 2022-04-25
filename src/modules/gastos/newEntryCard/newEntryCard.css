@@ -8,3 +8,7 @@
     border: solid black 1px;
     border-radius: 8px;
 }
+.card-button{
+    margin: 50px 0 20px 0;
+    align-self: center;
+}
