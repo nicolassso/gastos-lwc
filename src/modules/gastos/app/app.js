@@ -1,6 +1,10 @@
 import { LightningElement } from 'lwc';
-import { APRIL_DATA } from '../../data/months/april/april';
+import { currentMonth } from './constants.js';
+import { APRIL_DATA } from './data/months/april/april';
+import { MARCH_DATA } from './data/months/march/march';
 
-export default class HelloWorldApp extends LightningElement {
+
+export default class App extends LightningElement {
+    month = currentMonth
     data = APRIL_DATA
 }

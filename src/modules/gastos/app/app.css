@@ -1,10 +1,27 @@
-main {
-    margin: 30px;
+* {
+    box-sizing: border-box;
+  }
+.main-div{
+    border: solid black 1px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-
-h1 {
-    color: #1798c1;
+.header-div{
+    border: solid black 1px;
+    width: 100%;
+}
+.cards-div{
+    border: solid black 1px;
+    padding: 20px 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cards-entry-div{
+    display: grid;
+    width: 50%;
+}
+.cards-card-div{
+    width: 50%;
 }
