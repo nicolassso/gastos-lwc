@@ -1,11 +1,11 @@
 import { LightningElement } from 'lwc';
 import { SubmitEntry } from './events';
 
-export default class NerCardEntry extends LightningElement {
+export default class NewCardEntry extends LightningElement {
 
-    categoryInput = '';
-    keyInput = '';
-    quantityInput = 0;
+    categoryInput = 'test';
+    keyInput = 'rent';
+    quantityInput = [135];
 
     handleInputChange(event) {
         this[event.path[0].id] = event.target.value
@@ -16,7 +16,7 @@ export default class NerCardEntry extends LightningElement {
         const newEntry = {
             category: this.categoryInput,
             key: this.keyInput,
-            quantity: parseFloat(this.quantityInput)
+            quantity: [parseFloat(this.quantityInput)]
         }
         this.dispatchEvent(new SubmitEntry(newEntry))
     }
