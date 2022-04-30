@@ -9,24 +9,18 @@
         </div>
         <div class="card-entries-div">
             <div
-
-            class="card-entry-div"
-            for:each={entries} 
-            for:item="entry" 
-            key={key}
-            style="display: flex;"
+                class="card-entry-div"
+                for:each="{entries}"
+                for:item="entry"
+                key="{key}"
+                style="display: flex"
             >
-                <p class="card-category-text">
-                    {entry.category}
-                </p>
-                <p class="card-quantity-text">
-                    {entry.quantity}
-                </p>
+                <p class="card-category-text">{entry.category}</p>
+                <p class="card-quantity-text">{entry.quantity}</p>
             </div>
-            <p if:true={newEntry}>New Entry Received: 
-                Category: {newEntry.category}
-                Key: {newEntry.key}
-                Quantity: {newEntry.quantity}
+            <p if:true="{newEntry}">
+                New Entry Received: Category: {newEntry.category} Key:
+                {newEntry.key} Quantity: {newEntry.quantity}
             </p>
         </div>
     </div>

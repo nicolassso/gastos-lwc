@@ -1,32 +1,31 @@
-.card-wrapper-div{
+.card-wrapper-div {
     width: 100%;
     max-width: 420px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     border: solid black 1px;
     border-radius: 8px;
 }
-.card-total-spent-div{
+.card-total-spent-div {
     align-self: center;
 }
-.card-labels-div{
+.card-labels-div {
     display: flex;
     justify-content: space-between;
     border-top: solid black 1px;
 }
-.card-entries-div{
+.card-entries-div {
     padding: 0 20px;
 }
-.card-entry-div{
+.card-entry-div {
     display: flex;
     justify-content: space-between;
 }
-.card-entry-div:not(:last-child){
+.card-entry-div:not(:last-child) {
     border-bottom: solid black 1px;
-
 }
-.card-quantity-text{
+.card-quantity-text {
     align-self: flex-end;
 }
