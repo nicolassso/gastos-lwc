@@ -3,34 +3,36 @@
     <div class="expense-title-div">
       <h2>NEW EXPENSE</h2>
     </div>
-    <div class="input-div">
-      <h3>Category:</h3>
-      <select
-        name="categoryInput"
-        id="categoryInput"
-        onchange={handleInputChange}
-      >
-        <option
-          key={id}
-          id={id}
-          for:each={categories}
-          for:item="category"
-          value={category}
+    <form action="">
+      <div class="input-div">
+        <h3>Category:</h3>
+        <select
+          name="categoryInput"
+          id="categoryInput"
+          onchange={handleInputChange}
         >
-          {category}
-        </option>
-      </select>
-    </div>
-    <div class="input-div">
-      <h3>Key:</h3>
-      <input id="keyInput" type="text" oninput={handleInputChange} />
-    </div>
-    <div class="input-div">
-      <h3>Quantity:</h3>
-      <input id="quantityInput" type="number" oninput={handleInputChange} />
-    </div>
-    <div class="card-button">
-      <button onclick={handleButtonClick} type="submit">Submit</button>
-    </div>
+          <option
+            key={id}
+            id={id}
+            for:each={categories}
+            for:item="category"
+            value={category}
+          >
+            {category}
+          </option>
+        </select>
+      </div>
+      <div class="input-div">
+        <h3>Key:</h3>
+        <input id="keyInput" type="text" oninput={handleInputChange} />
+      </div>
+      <div class="input-div">
+        <h3>Quantity:</h3>
+        <input id="quantityInput" type="number" oninput={handleInputChange} />
+      </div>
+      <div class="card-button">
+        <input onclick={handleButtonClick} type="submit" />
+      </div>
+    </form>
   </div>
 </template>
