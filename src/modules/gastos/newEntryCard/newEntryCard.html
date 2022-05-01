@@ -5,7 +5,20 @@
     </div>
     <div class="input-div">
       <h3>Category:</h3>
-      <input id="categoryInput" type="text" oninput={handleInputChange} />
+      <select
+        name="categoryInput"
+        id="categoryInput"
+        onchange={handleInputChange}
+      >
+        <option
+          key={key}
+          for:each={categories}
+          for:item="category"
+          value={category}
+        >
+          {category}
+        </option>
+      </select>
     </div>
     <div class="input-div">
       <h3>Key:</h3>
