@@ -11,7 +11,8 @@
         onchange={handleInputChange}
       >
         <option
-          key={key}
+          key={id}
+          id={id}
           for:each={categories}
           for:item="category"
           value={category}

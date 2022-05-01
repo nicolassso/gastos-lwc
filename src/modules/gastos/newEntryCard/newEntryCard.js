@@ -23,7 +23,7 @@ export default class NewCardEntry extends LightningElement {
     return CATEGORIES;
   }
 
-  get key() {
-    return Math.random();
+  get id() {
+    return this.categories.map((c) => `${c}-select`);
   }
 }
