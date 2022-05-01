@@ -2,9 +2,9 @@ import { LightningElement } from 'lwc';
 import { SubmitEntry } from './events';
 import { CATEGORIES } from './constants';
 export default class NewCardEntry extends LightningElement {
-  categoryInput = 'test';
+  categoryInput = 'rent';
   keyInput = 'rent';
-  quantityInput = [135];
+  quantityInput = [0];
 
   handleInputChange(event) {
     this[event.path[0].id] = event.target.value;
