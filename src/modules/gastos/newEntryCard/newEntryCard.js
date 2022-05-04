@@ -29,15 +29,10 @@ export default class NewCardEntry extends LightningElement {
     return CATEGORIES;
   }
 
-  get id() {
-    return this.categories.map((c) => `${c}-select`);
-  }
-
   get key() {
     return Math.random();
   }
 
-  get selectedKey() {
   get selectedCategoryKeys() {
     return KEYS[this.categoryInput];
   }
