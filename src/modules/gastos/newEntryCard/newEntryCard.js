@@ -6,6 +6,12 @@ export default class NewCardEntry extends LightningElement {
   keyInput;
   quantityInput;
 
+  connectedCallback() {
+    this.categoryInput = 'rent';
+    this.keyInput = 'rent';
+    this.quantityInput = 0;
+  }
+
   handleInputChange(event) {
     this[event.path[0].id] = event.target.value;
   }
