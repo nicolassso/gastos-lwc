@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 import { SubmitEntry } from './events';
 import { CATEGORIES } from './constants';
+import { CATEGORIES, KEYS } from './constants';
 export default class NewCardEntry extends LightningElement {
   categoryInput = 'rent';
   keyInput = 'rent';
