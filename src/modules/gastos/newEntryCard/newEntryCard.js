@@ -38,6 +38,7 @@ export default class NewCardEntry extends LightningElement {
   }
 
   get selectedKey() {
+  get selectedCategoryKeys() {
     return KEYS[this.categoryInput];
   }
 }

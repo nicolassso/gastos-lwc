@@ -25,11 +25,11 @@
       <select name="keyInput" id="keyInput" onchange={handleInputChange}>
         <option
           key={key}
-          for:each={selectedKey}
-          for:item="selected"
-          value={selected}
+          for:each={selectedCategoryKeys}
+          for:item="selectedItem"
+          value={selectedItem}
         >
-          {selected}
+          {selectedItem}
         </option>
       </select>
     </div>
