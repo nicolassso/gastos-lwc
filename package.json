@@ -12,7 +12,8 @@
         "start:prod-compat": "lwr serve --mode prod-compat"
     },
     "dependencies": {
-        "lwr": "0.6.5"
+        "lwr": "0.6.5",
+        "query-selector-shadow-dom": "^1.0.0"
     },
     "engines": {
         "node": ">=14.15.4 <17"
