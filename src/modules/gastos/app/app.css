@@ -1,16 +1,13 @@
-* {
-    box-sizing: border-box;
-  }
-.main-div{
+.main-div {
     border: solid black 1px;
     display: flex;
     flex-direction: column;
 }
-.header-div{
-    border: solid black 1px;
-    width: 100%;
+.header-div {
+    background-color: rgb(103, 58, 183);
+    width: auto;
 }
-.cards-div{
+.cards-div {
     border: solid black 1px;
     padding: 20px 40px;
     max-width: 100%;
@@ -18,10 +15,10 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
-.cards-entry-div{
+.cards-entry-div {
     display: grid;
     width: 50%;
 }
-.cards-card-div{
+.cards-card-div {
     width: 50%;
 }

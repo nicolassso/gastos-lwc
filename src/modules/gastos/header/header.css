@@ -1,4 +1,7 @@
-.header{
-    width: 100%;
-    padding: 0 40px;
+.header {
+  width: auto;
+  height: auto;
+  padding: 0 40px;
+  color: white;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }

@@ -1,24 +1,17 @@
 <template>
-    <div class="main-div">
-        <div class="header-div">
-            <gastos-header></gastos-header>
-        </div>
-        <div class="cards-div">
-            <div class="cards-entry-div">
-                <gastos-new-entry-card
-                onsubmitentry={handleSubmitEntry}>
-                </gastos-new-entry-card>
-            </div>
-            <div class="cards-card-div">
-                <gastos-card 
-                    data={data}
-                    month={month}
-                    new-entry={newEntry}
-                    >
-                </gastos-card>
-            </div>
-
-        </div>
-
+  <div class="main-div">
+    <div class="header-div">
+      <gastos-header></gastos-header>
     </div>
+    <div class="cards-div">
+      <div class="cards-entry-div">
+        <gastos-new-entry-card onsubmitentry={handleSubmitEntry}>
+        </gastos-new-entry-card>
+      </div>
+      <div class="cards-card-div">
+        <gastos-card data={data} month={month} new-entry={newEntry}>
+        </gastos-card>
+      </div>
+    </div>
+  </div>
 </template>
