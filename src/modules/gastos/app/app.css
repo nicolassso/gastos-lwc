@@ -1,14 +1,11 @@
-* {
-    box-sizing: border-box;
-}
 .main-div {
     border: solid black 1px;
     display: flex;
     flex-direction: column;
 }
 .header-div {
-    border: solid black 1px;
-    width: 100%;
+    background-color: rgb(103, 58, 183);
+    width: auto;
 }
 .cards-div {
     border: solid black 1px;
