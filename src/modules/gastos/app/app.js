@@ -13,8 +13,7 @@ export default class App extends LightningElement {
   newEntry = {};
 
   connectedCallback() {
-    const data = JSON.parse(localStorage.getItem('data'));
-    this.data = data || {
+    this.data = this.storedData || {
       [currentMonth]: this.totalExpensesByCategory,
       total: this.totalExpenses,
     };
@@ -36,6 +35,10 @@ export default class App extends LightningElement {
 
   get month() {
     return currentMonth;
+  }
+
+  get storedData() {
+    return JSON.parse(localStorage.getItem('data'));
   }
 
   get totalExpenses() {

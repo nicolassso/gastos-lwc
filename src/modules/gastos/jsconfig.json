@@ -1,9 +1,9 @@
 {
-    "compilerOptions": {
-        "experimentalDecorators": true
-    },
-    "include": ["**/*", "../../node_modules/lwc/**/*.d.ts", "../../data"],
-    "paths": {
-        "c/*": ["*"]
-    }
+  "compilerOptions": {
+    "experimentalDecorators": true
+  },
+  "include": ["**/*", "../../node_modules/lwc/**/*.d.ts"],
+  "paths": {
+    "gastos/*": ["*"]
+  }
 }

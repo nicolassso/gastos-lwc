@@ -12,16 +12,23 @@
         "start:prod-compat": "lwr serve --mode prod-compat"
     },
     "dependencies": {
-        "lwr": "0.6.5"
+        "lwr": "^0.6.5"
     },
     "engines": {
         "node": ">=14.15.4 <17"
     },
     "devDependencies": {
+        "@lwc/eslint-plugin-lwc": "^1.2.1",
         "@lwc/rollup-plugin": "^2.13.0",
         "@rollup/plugin-replace": "^4.0.0",
+        "@salesforce/eslint-config-lwc": "^3.3.1",
+        "@salesforce/eslint-plugin-lightning": "^1.0.0",
+        "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^26.1.5",
         "lwc": "^2.5.8",
-        "rollup": "^2.70.2",
-        "xxxxx": "^1.0.3"
+        "prettier": "^2.6.2",
+        "rollup": "^2.70.2"
     }
 }
