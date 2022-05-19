@@ -2,18 +2,20 @@ import { LightningElement } from 'lwc';
 import { SubmitEntry } from './events';
 import { CATEGORIES, KEYS } from './constants';
 export default class NewCardEntry extends LightningElement {
-  categoryInput;
-  keyInput;
-  quantityInput;
-
-  connectedCallback() {
-    this.categoryInput = 'rent';
-    this.keyInput = 'rent';
-    this.quantityInput = 0;
-  }
+  categoryInput = this.categories[0];
+  keyInput = KEYS[this.categoryInput][0];
+  quantityInput = 0;
 
   handleInputChange(event) {
-    this[event.path[0].id] = event.target.value;
+    event.composedPath()[0].id === 'categoryInput'
+      ? (this.categoryInput = event.target.value) &&
+        (this.keyInput = KEYS[this.categoryInput][0])
+      : event.composedPath()[0].id === 'keyInput'
+      ? (this.keyInput = event.target.value)
+      : (this.quantityInput = event.target.value);
+    console.log(
+      `${this.categoryInput}, ${this.keyInput}, ${this.quantityInput}`
+    );
   }
 
   handleButtonClick() {

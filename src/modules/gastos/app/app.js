@@ -20,8 +20,11 @@ export default class App extends LightningElement {
   }
 
   handleSubmitEntry({ detail }) {
+    console.log(detail);
     this.newEntry = JSON.parse(JSON.stringify(detail));
     this.entries.push(this.newEntry);
+    console.log(this.entriesToObject);
+
     this.data = {
       [currentMonth]: this.totalExpensesByCategory,
       total: this.totalExpenses,
