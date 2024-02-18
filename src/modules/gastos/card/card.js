@@ -9,11 +9,11 @@ export default class Card extends LightningElement {
   @api newEntry;
 
   get total() {
-    return this.data.total || '';
+    return this.data?.total || '';
   }
 
   get expenses() {
-    return this.data[this.month] || {};
+    return this.data ? this.data[this.month] : {};
   }
 
   get key() {
